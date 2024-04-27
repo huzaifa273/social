@@ -1,0 +1,31 @@
+.profileMainPostContainer {
+  flex: 3;
+  margin: 20px;
+}
+.profileCoverImage {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.yourProfile {
+  margin-top: -25px;
+  margin-left: 8px;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+  background-color: white;
+  /* border: 2px solid red; */
+  border-radius: 10px;
+}
+@media screen and (max-width: 320px) {
+  .profileMainPostContainer {
+    /* flex: 3 1; */
+    margin: 0px;
+  }
+  .profileCoverImage {
+    margin-top: 10px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+}

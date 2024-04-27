@@ -1,0 +1,160 @@
+.postDiv {
+  margin-top: 10px;
+  width: 100%;
+}
+.subPostDiv {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.topDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.profileDiv {
+  display: flex;
+  align-items: center;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.profileText p:nth-child(1) {
+  font-weight: 600;
+  margin: 0;
+}
+.profileText p:nth-child(2) {
+  font-weight: 400;
+  font-size: 13px;
+  color: #666565;
+  margin: 0;
+}
+.contentText {
+  font-size: 15px;
+  color: #666565;
+  text-align: justify;
+}
+.postImage {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+.bottomOfPost {
+  display: flex;
+  justify-content: space-between;
+}
+.leftBottomOfPost {
+  display: flex;
+  justify-content: space-around;
+}
+.leftBottomOfPost,
+.rightBottomOfPost {
+  display: flex;
+}
+.like-icon {
+  color: red;
+}
+.comment {
+  margin-left: 10px;
+}
+.like,
+.comment,
+.rightBottomOfPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.like,
+.comment,
+.rightBottomOfPost :hover {
+  cursor: pointer;
+}
+.like p,
+.comment p,
+.rightBottomOfPost p {
+  margin: 5px;
+}
+.commentDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.commentDivLeft {
+  display: flex;
+  align-items: center;
+}
+.commentProfile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.commentInput {
+  width: 400px;
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+.commentButton {
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+.commentButton:hover {
+  background-color: #f3f5f7;
+  border-radius: 20px;
+  padding-top: 2px;
+}
+.showAllComments {
+  display: flex;
+  margin-top: 6px;
+}
+.allCommentsDiv {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.postedComment {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 95%;
+}
+.postedComment p:nth-child(1) {
+  margin: 0%;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: small;
+}
+.postedComment p:nth-child(2) {
+  margin: 0%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .commentInput {
+    width: 100%;
+  }
+  .postedComment {
+    max-width: 90%;
+  }
+  .subPostDiv {
+    border-radius: 0px;
+    padding: 0px;
+  }
+  .profileDiv {
+    padding-left: 5px;
+  }
+  .postImage {
+    border-radius: 0px;
+  }
+  .commentDivLeft {
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,88 @@
+.leftbar-main {
+  flex: 1.5;
+  position: sticky;
+  top: 50px;
+  height: 90vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  /* border: 2px solid red; */
+}
+.Leftbar-top {
+  height: fit-content;
+  min-height: fit-content;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.Leftbar {
+  height: 60vh;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Leftbar::-webkit-scrollbar {
+  display: none;
+}
+.notificationContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.notificationContainer h3 {
+  font-family: apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.notificationContainer p {
+  font-family: apple-system, sans-serif;
+  color: rgb(118, 118, 118);
+  font-size: 13px;
+}
+.notification {
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #737373;
+  margin: 10px 0;
+}
+.notification img {
+  object-fit: cover;
+}
+.notification p {
+  font-size: small;
+  margin: 0px;
+  width: 60%;
+}
+.notificationImg img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.notificationPostImg {
+  width: 50px;
+  height: 50x;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.exploreImage {
+  margin: 2px;
+  width: 90px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}

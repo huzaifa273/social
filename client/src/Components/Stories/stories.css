@@ -1,0 +1,144 @@
+/* Variables */
+:root {
+  --optionDefaultColours: #ed5565, #fc6e51, #ffce54, #2ecc71, #5d9cec, #ac92ec;
+}
+
+/* Body */
+/* body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  transition: 0.25s;
+} */
+
+body.dark {
+  background: #232223;
+  color: white;
+}
+
+.credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+.info .main {
+  /* font-size: 5px; */
+  font-weight: 300;
+  /* color: crimson; */
+}
+.sub {
+  font-size: 0.8rem;
+  color: #cbcbcb;
+}
+/* Options */
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 600px;
+  width: calc(100% - 100px);
+  height: 400px;
+  overflow-x: scroll;
+}
+.options::-webkit-scrollbar {
+  display: none;
+}
+
+.options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  /* object-fit: cover; */
+  background-size: cover;
+}
+
+.options .option.active {
+  flex-grow: 10000;
+  /* transform: scale(1); */
+  max-width: 600px;
+  /* margin: 0px; */
+  border-radius: 20px;
+  background-size: auto 100%;
+  min-width: 250px;
+}
+
+.options .option:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+
+.options .option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.options .option .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.options .option .label .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+
+.options .option .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  color: white;
+  white-space: pre;
+}
+
+.options .option .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.options .option .label .info .sub {
+  transition-delay: 0.1s;
+}
+
+.story-profile {
+  object-fit: cover;
+  /* overflow: hidden; */
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.label {
+  left: 20px;
+}

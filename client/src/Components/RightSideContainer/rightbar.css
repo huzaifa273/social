@@ -1,0 +1,101 @@
+.rightbar {
+  flex: 1.5;
+  min-height: fit-content;
+  position: sticky;
+  top: 50px;
+}
+.rightContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 47vh;
+  background-color: white;
+  margin-top: 20px;
+  padding-top: 5px;
+  border-radius: 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge, work for all */
+  scrollbar-width: none; /* Firefox, work for all */
+}
+.adImage {
+  align-items: center;
+  width: 280px;
+  height: 15vh;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.rightContainer2 {
+  overflow: hidden;
+  height: 70vh;
+  background-color: white;
+  margin-top: 20px;
+  /* padding-top: 5px; */
+  border-radius: 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge, work for all */
+  scrollbar-width: none; /* Firefox, work for all */
+}
+.friendsYouMightKnow {
+  font-weight: 600;
+  font-size: larger;
+  /* margin: 10px 20px; */
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  margin-top: -10px;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.addNewFriendDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+  margin: 10px 5px;
+  background-color: white;
+  /* background-color: black; */
+  border-radius: 3px;
+}
+.addNewFriendDiv:hover {
+  background-color: #f3f5f7;
+}
+.addFriendDivLeft {
+  display: flex;
+  align-items: center;
+}
+.addFriendDivLeft p {
+  margin: 0%;
+}
+.addFriendDivLeft p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.addFriendDivLeft p:nth-child(1):hover {
+  text-decoration: none;
+}
+.addFriendDivLeft p:nth-child(2) {
+  font-size: 12px;
+  color: gray;
+  margin-left: 5px;
+}
+.addFriendIcon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .rightbar {
+    display: none;
+  }
+}

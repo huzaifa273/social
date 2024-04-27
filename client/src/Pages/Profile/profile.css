@@ -1,0 +1,18 @@
+.profileContainerDiv {
+  background-color: #f1f1f1;
+}
+.subProfileContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 320px) {
+  .subProfileContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin: auto;
+    width: 100%;
+  }
+}

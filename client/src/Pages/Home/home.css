@@ -1,0 +1,56 @@
+.home {
+  background-color: #f3f6f8;
+  position: relative;
+}
+.ComponentsContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 87%;
+  margin: auto;
+  position: relative;
+}
+.home {
+  /* Set the layout to flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Navbar {
+  /* Set Navbar to stick to the top */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure Navbar is above other content */
+  /* Add additional styles as needed */
+}
+
+.ComponentsContainer {
+  /* Set ComponentsContainer to fill remaining vertical space */
+  flex: 1;
+  /* Apply any other styles needed */
+}
+
+.LeftBar,
+.MainPost,
+.RightBar {
+  /* Make components scrollable */
+  overflow-y: auto;
+  /* Set the desired height or max-height */
+  height: 100vh; /* or any other value */
+  /* Add additional styles as needed */
+}
+/* .mobileBottomNavbar {
+  display: none;
+} */
+@media screen and (max-width: 320px) {
+  .ComponentsContainer {
+    /* Adjust width to fit smaller screens */
+    width: 100%;
+    margin-top: 5px;
+    /* Add additional styles as needed */
+  }
+  .mobileBottomNavbar {
+    display: block;
+    border: 3px solid red;
+  }
+}

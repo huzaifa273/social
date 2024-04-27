@@ -1,0 +1,12 @@
+npm init -y
+npm i express
+npm i mongoose
+npm i dotenv
+npm i nodemon
+npm install express-validator
+
+node index.js
+"scripts": {
+    "start": "nodemon index.js"
+},
+npm start

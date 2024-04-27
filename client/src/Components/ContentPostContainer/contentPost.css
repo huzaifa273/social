@@ -1,0 +1,121 @@
+.contentUploadContainer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+}
+.postContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contentWritePart {
+  width: 87%;
+  height: 40px;
+  /* box-shadow: rgba(0, 0, 0, 0.06) 4px 2px 4px 2px inset; */
+  background-color: #f3f5f7;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 3px;
+}
+.content-hr {
+  /* height: 2px; 
+  background-color:  */
+  /* border: none; removes the default border */
+  margin: 10px 10; /* adds vertical spacing before and after the line */
+}
+.uploadDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-icons {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  align-items: center;
+  width: 90%;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.file-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+.file-icon-div p {
+  font-weight: 600;
+  color: #353d68;
+}
+.file-icon-div:hover {
+  cursor: pointer;
+  background-color: #f3f5f7;
+}
+/* .blackButton Css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+.blackButton {
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.blackButton:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .file-icon-div p {
+    display: none;
+  }
+  .contentUploadContainer {
+    padding: 5px;
+    border-radius: 0%;
+  }
+  .blackButton {
+    width: 70px;
+    height: 30px;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .subPostDiv {
+    background-color: white;
+    /* border-radius: 20px; */
+    padding: 5px;
+  }
+  .commentButton {
+    height: 30px;
+    width: 30px;
+  }
+}
