@@ -15,7 +15,7 @@ function Follow({ item }) {
   const handleFollow = async (e) => {
     setFollow(true);
     const res = await axios.put(
-      `http://localhost:5000/api/user/following/${item._id}`,
+      `https://social-gilt.vercel.app/api/user/following/${item._id}`,
       {},
       {
         headers: {

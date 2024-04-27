@@ -29,7 +29,7 @@ function LeftBar() {
     const getPost = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/user/flw/${id}`,
+          `https://social-gilt.vercel.app/api/user/flw/${id}`,
           {
             headers: {
               token: accessToken,

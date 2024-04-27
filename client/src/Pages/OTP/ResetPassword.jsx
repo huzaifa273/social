@@ -12,7 +12,7 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:5000/api/user/reset/password?${code}`, {
+      .put(`https://social-gilt.vercel.app/api/user/reset/password?${code}`, {
         password: password,
       })
       .then((res) => {

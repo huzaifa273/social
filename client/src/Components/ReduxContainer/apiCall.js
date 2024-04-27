@@ -5,7 +5,10 @@ const login = async (dispatch, user) => {
   // console.log("Hello Api Call");
   dispatch(loginStart());
   try {
-    const res = await axios.post("http://localhost:5000/api/user/login", user);
+    const res = await axios.post(
+      "https://social-gilt.vercel.app/api/user/login",
+      user
+    );
     dispatch(loginSuccess(res.data));
   } catch (error) {
     dispatch(loginFailure());
@@ -17,7 +20,7 @@ const verifyEmail = async (dispatch, user) => {
   dispatch(loginStart());
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/user/verify/email",
+      "https://social-gilt.vercel.app/api/user/verify/email",
       {
         OTP: user.OTP,
         user: user.user,
@@ -34,7 +37,7 @@ const signup = async (dispatch, user) => {
   dispatch(loginStart());
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/user/register",
+      "https://social-gilt.vercel.app/api/user/register",
       user
     );
     dispatch(loginSuccess(res.data));

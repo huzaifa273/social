@@ -81,7 +81,7 @@ function ContentPost() {
             console.log("File available at", downloadURL);
             try {
               const res = axios.post(
-                `http://localhost:5000/api/post/user/post`,
+                `https://social-gilt.vercel.app/api/post/user/post`,
                 {
                   title: title,
                   image: downloadURL,
@@ -143,7 +143,7 @@ function ContentPost() {
             console.log("Video File available at", downloadURL);
             try {
               const res = axios.post(
-                `http://localhost:5000/api/post/user/post`,
+                `https://social-gilt.vercel.app/api/post/user/post`,
                 // use JSON.stringyfy to convert the object into string
                 {
                   title: title,
@@ -167,7 +167,7 @@ function ContentPost() {
       try {
         toast.success("Successfully Posted");
         const res = axios.post(
-          `http://localhost:5000/api/post/user/post`,
+          `https://social-gilt.vercel.app/api/post/user/post`,
           // use JSON.stringyfy to convert the object into string
           {
             title: title,

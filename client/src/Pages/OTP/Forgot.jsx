@@ -7,7 +7,7 @@ function Forgot() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post(`http://localhost:5000/api/user/forget/password`, {
+      .post(`https://social-gilt.vercel.app/api/user/forget/password`, {
         email: email,
       })
       .then((res) => {

@@ -34,11 +34,14 @@ function ProfileLeftBar() {
   useEffect(() => {
     const getAllUserExceptFollowing = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/all/user", {
-          headers: {
-            token: accessToken,
-          },
-        });
+        const res = await axios.get(
+          "https://social-gilt.vercel.app/api/user/all/user",
+          {
+            headers: {
+              token: accessToken,
+            },
+          }
+        );
 
         setAllusers(res.data);
       } catch (error) {
@@ -51,7 +54,7 @@ function ProfileLeftBar() {
     const getUser = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/user/post/user/details/${id}`
+          `https://social-gilt.vercel.app/api/user/post/user/details/${id}`
         );
         setUsers(res.data);
       } catch (error) {
@@ -71,7 +74,7 @@ function ProfileLeftBar() {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/user/following/${id}`,
+        `https://social-gilt.vercel.app/api/user/following/${id}`,
         {},
         {
           headers: {
@@ -91,7 +94,7 @@ function ProfileLeftBar() {
     // try {
     //   if (follow === "Unfollow") {
     //     const res = await axios.put(
-    //       `http://localhost:5000/api/user/unfollow/${id}`,
+    //       `https://social-gilt.vercel.app/api/user/unfollow/${id}`,
     //       {},
     //       {
     //         headers: {
@@ -102,7 +105,7 @@ function ProfileLeftBar() {
     //     toast.success("Successfully UnFollowed");
     //   } else {
     //     const res = await axios.put(
-    //       `http://localhost:5000/api/user/following/${id}`,
+    //       `https://social-gilt.vercel.app/api/user/following/${id}`,
     //       {},
     //       {
     //         headers: {
@@ -128,7 +131,7 @@ function ProfileLeftBar() {
     const getFollowingUsers = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/user/following/${id}`
+          `https://social-gilt.vercel.app/api/user/following/${id}`
         );
         setFollowingUsers(res.data);
       } catch (error) {

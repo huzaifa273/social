@@ -18,7 +18,7 @@ function Login() {
     // try {
     //   console.log(email);
     //   console.log(password);
-    //   const res = await axios.post(`http://localhost:5000/api/user/login`, {
+    //   const res = await axios.post(`https://social-gilt.vercel.app/api/user/login`, {
     //     email: email,
     //     password: password,
     //   });

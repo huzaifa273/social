@@ -30,7 +30,7 @@ function Post({ post }) {
     const getUser = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/user/post/user/details/${post.user}`
+          `https://social-gilt.vercel.app/api/user/post/user/details/${post.user}`
         );
         setUser(res.data);
       } catch (error) {
@@ -59,7 +59,7 @@ function Post({ post }) {
     // console.log(newComment);
 
     const res = await axios.put(
-      `http://localhost:5000/api/post/comment/post`,
+      `https://social-gilt.vercel.app/api/post/comment/post`,
       {
         postId: `${post._id}`,
         username: username,
@@ -88,7 +88,7 @@ function Post({ post }) {
     if (like == false) {
       try {
         const res = await axios.put(
-          `http://localhost:5000/api/post/${post._id}/like`,
+          `https://social-gilt.vercel.app/api/post/${post._id}/like`,
           {
             user: userId,
           },
@@ -106,7 +106,7 @@ function Post({ post }) {
     } else {
       try {
         const res = await axios.put(
-          `http://localhost:5000/api/post/${post._id}/like`,
+          `https://social-gilt.vercel.app/api/post/${post._id}/like`,
           {
             user: userId,
           },

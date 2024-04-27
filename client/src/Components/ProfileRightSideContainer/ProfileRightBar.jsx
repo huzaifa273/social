@@ -17,7 +17,7 @@ function ProfileRightBar() {
     const getFollowersUsers = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/user/followers/${id}`
+          `https://social-gilt.vercel.app/api/user/followers/${id}`
         );
         setFollowers(res.data);
       } catch (error) {
@@ -32,11 +32,14 @@ function ProfileRightBar() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/all/user", {
-          headers: {
-            token: accessToken,
-          },
-        });
+        const res = await axios.get(
+          "https://social-gilt.vercel.app/api/user/all/user",
+          {
+            headers: {
+              token: accessToken,
+            },
+          }
+        );
         setUsers(res.data);
       } catch (error) {
         console.log(error);

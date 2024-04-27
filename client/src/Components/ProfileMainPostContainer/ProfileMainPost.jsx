@@ -21,7 +21,7 @@ function ProfileMainPost() {
       try {
         // console.log("Get posts");
         const res = await axios.get(
-          `http://localhost:5000/api/post/get/post/${id}`,
+          `https://social-gilt.vercel.app/api/post/get/post/${id}`,
           {
             headers: {
               token: accessToken,
