@@ -22,6 +22,15 @@ app.use(
     credentials: true,
   })
 );
+app.use(function (req, res, next) {
+  //Enabling CORS
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type"
+  );
+});
 app.use(express.json());
 app.use("/api/user", userRoute);
 app.use("/api/post", postRoute);
