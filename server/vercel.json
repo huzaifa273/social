@@ -1,14 +1,6 @@
 {
   "version": 2,
-  "build": [
-    {
-      "src": "package.json",
-      "use": "@now/node"
-    },
-    {
-      "src": "index.js",
-      "use": "@now/node"
-    }
-  ],
-  "routes": [{ "source": "/(.*)", "destination": "/" }]
+  "name": "music-album",
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }
