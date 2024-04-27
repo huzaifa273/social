@@ -17,7 +17,7 @@ mongoose
 
 app.use(
   cors({
-    origin: "https://social-client-chi.vercel.app",
+    origin: "https://social-gilt.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
